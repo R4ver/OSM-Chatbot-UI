@@ -1,0 +1,54 @@
+#Frame
+    display: block
+    position: relative
+    width: 100vw
+    height: 100vh
+    border: 2px solid $maco
+    border-top: 0px
+
+#FrameToolbar
+    display: flex
+    align-content: column
+    justify-content: space-between
+    position: relative
+    width: 100vw
+    z-index: 999
+
+    background-color: $maco
+
+    span, .toolbar__btn-wrapper
+        display: block
+        color: $white
+        font-size: 16px
+
+    span
+        padding: 8px
+
+    .toolbar__btn-wrapper
+
+        a 
+            display: inline-block
+            padding: 8px 0px
+            width: 40px
+
+            color: $white
+            font-size: 16px
+            text-align: center
+            text-decoration: none
+
+            &:hover
+                background-color: rgba(255,255,255,.1)
+
+        .frame__close-btn
+            width: 56px
+            background-color: $red
+
+            &:hover
+                background-color: $redhover
+
+#FrameInner
+    display: flex
+    align-content: column
+    justify-content: space-between
+    position: relative
+    height: calc(100% - 38px)

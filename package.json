@@ -1,0 +1,9 @@
+{
+  "name": "OSM-Chatbot-UI",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*"
+  }
+}

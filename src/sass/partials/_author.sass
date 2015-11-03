@@ -1,0 +1,55 @@
+$cover-height: 250px
+
+$image-size: 140px
+$move-image: calc(-140px / 2)
+$image-margin: calc(250px / 2 - 70px)
+
+.author__header
+    margin-top: 80px
+    height: $cover-height
+    background-size: cover
+    background-position: -50%
+
+    .header__overlay
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: $cover-height
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%)
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0)))
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+        background: -o-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+        background: -ms-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+        background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 )
+
+
+    .author__image
+        display: inline-block
+        position: relative
+        left: $move-image
+        margin-top: $image-margin
+        width: $image-size
+        height: $image-size
+
+        border-radius: 50%
+
+        img
+            max-width: 100%
+            border-radius: 50%
+
+    .author__meta
+        display: inline-block
+        position: relative
+        top: -20px
+
+        h1, span, i, p, a
+            color: $white
+            font-size: $base-font-size
+            font-weight: $light
+
+        .author__title
+            font-size: $header-font-size
+
