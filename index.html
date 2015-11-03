@@ -8,74 +8,63 @@
     </head>
     <body>
 
-        <div id="Frame">
-            <div id="FrameToolbar">
-                <span>OSM Chatbot</span>
-                <div class="toolbar__btn-wrapper">
-                    <a href="#">_</a> 
-                    <a href="#">[☻]</a>
-                    <a class="frame__close-btn" href="#">X</a>
-                </div>
-            </div>
-            
-            <div id="FrameInner">
-                <nav class="client__navigation">
-                    <div class="nav__bot-name">OSM Chatbot</div>
+        <div id="pageWrapper">
+            <nav class="client__navigation">
+                <div class="nav__bot-name">OSM Chatbot</div>
+                
+                <span class="nav__item-title nav__item-core">Dashboard</span>
+                <ul>
+                    <li><a class="nav__current-item" href="#">Main</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+
+                <span class="nav__item-title nav__item-core">Core</span>
+                <ul>
+                    <li><a href="#">Greetings</a></li>
+                    <li><a href="#">Statuses</a></li>
+                    <li><a href="#">Music player</a></li>
+                </ul>
+
+                <span class="nav__item-title nav__item-plugins">Plugins</span>
+                <ul>
+                    <li><a href="#">Ops</a></li>
+                    <li><a href="#">Genre request</a></li>
+                    <li><a href="#">Ranks</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#">Question</a></li>
+                </ul>
+                <footer class="nav__footer">
                     
-                    <span class="nav__item-title nav__item-core">Dashboard</span>
-                    <ul>
-                        <li><a class="nav__current-item" href="#">Main</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
+                </footer>
+            </nav>
 
-                    <span class="nav__item-title nav__item-core">Core</span>
-                    <ul>
-                        <li><a href="#">Greetings</a></li>
-                        <li><a href="#">Statuses</a></li>
-                        <li><a href="#">Music player</a></li>
-                    </ul>
+            <main class="client__body client__body-plugin">
+                <header class="plugin__header">
+                    <h1 class="plugin__title">Settings</h1>
+                </header>
 
-                    <span class="nav__item-title nav__item-plugins">Plugins</span>
-                    <ul>
-                        <li><a href="#">Ops</a></li>
-                        <li><a href="#">Genre request</a></li>
-                        <li><a href="#">Ranks</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">Question</a></li>
-                    </ul>
-                    <footer class="nav__footer">
-                        
-                    </footer>
-                </nav>
+                <div class="plugin__body">
+                    <h2 class="plugin__section-title">Section title</h2>
+                    <h3 class="plugin__section-subtitle">Section subtitle</h3>
 
-                <main class="client__body client__body-plugin">
-                    <header class="plugin__header">
-                        <h1 class="plugin__title">Settings</h1>
-                    </header>
+                    <hr />
 
-                    <div class="plugin__body">
-                        <h2 class="plugin__section-title">Section title</h2>
-                        <h3 class="plugin__section-subtitle">Section subtitle</h3>
+                    <input type="submit" class="plugin__button" value="Button"/>
 
-                        <hr />
-
-                        <input type="submit" class="plugin__button" value="Button"/>
-
-                    </div>
-                </main>
-
-                <div class="client__chat-stream">
-                    <h1>Chat</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
                 </div>
+            </main>
+
+            <div class="client__chat-stream">
+                <h1>Chat</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
         </div>
 
